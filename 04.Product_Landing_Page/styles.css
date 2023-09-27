@@ -1,24 +1,10 @@
-body {
-  background-color: blue;
+body > header {
+  background: #394451;
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 5px solid rgba(0, 0, 0 , .25);
+  padding: 1.5rem 0;
+  position: relative;
+  width: calc(100% + 2rem + 2rem);
+  z-index: 100;
 }
-
-header {
-    position: fixed;
-    top: 0;
-}
-
-header nav {
-    text-transform: uppercase;
-}
-
-/*
-
-at least 1 element with flex
-
-AND 
-
-@media (max-width: 400px) {
-    
-  }
-
-*/
