@@ -1,10 +1,61 @@
+:root {
+  --body-bg: #e9e7e0;
+  --body-text: #222;
+  --header-bg: #394451;
+}
+
+html {
+	color: var(--body-text);
+	font-family: "Crimson Pro", Georgia, serif;
+	hyphens: auto;
+	line-height: 1.4;
+	background: var(--body-bg);
+}
+
 body > header {
-  background: #394451;
+  background: var(--header-bg);
   display: flex;
-  justify-content: space-around;
-  border-bottom: 5px solid rgba(0, 0, 0 , .25);
-  padding: 1.5rem 0;
+  justify-content: space-evenly;
+  border-bottom: 1px solid rgba(0, 0, 0 , .25);
+  padding: 0 0;
   position: relative;
   width: calc(100% + 2rem + 2rem);
   z-index: 100;
+}
+
+header nav {
+	font-family: "League Spartan";
+	text-transform: uppercase;
+	align-self: center;
+	text-align: right;
+	font-size: 0;
+}
+
+header h1 {
+  color: #fff;
+}
+
+header nav li {
+	color: #fff;
+	display: inline-block;
+	padding-top: 5px;
+}
+
+header nav li + li:before {
+	content: "|";
+	font-size: 16px;
+	margin-left: 10px;
+	margin-right: 10px;
+	position: relative;
+	top: -1px;
+	text-shadow: 1px 1px 0 rgba(0, 0, 0, .75);
+}
+
+header nav li a {
+  color: #fff;
+	text-decoration: none;
+	font-size: 1rem;
+	letter-spacing: 1px;
+	position: relative;
+	display: inline-block;
 }
